@@ -1,4 +1,4 @@
-function completed = example_nonlinear_reach_05_autonomousCar()
+% function completed = example_nonlinear_reach_05_autonomousCar()
 % example_nonlinear_reach_05_autonomousCar - example of 
 %     nonlinear reachability analysis for following a reference trajectory; 
 %     this example is also a unit test function.
@@ -60,14 +60,12 @@ options.tensorOrder = 2;
 
 vehicle = nonlinearSys(@vmodel_A_bicycle_linear_controlled,8,26);
 
-
 % Reachability Analysis ---------------------------------------------------
 
 tic
 R = reach(vehicle, params, options);
 tComp = toc;
 disp(['computation time of reachable set: ',num2str(tComp)]);
-
 
 % Simulation --------------------------------------------------------------
 

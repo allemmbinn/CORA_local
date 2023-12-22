@@ -98,7 +98,8 @@ disp(['computation time: ',num2str(tComp)]);
 
 % Visualization -----------------------------------------------------------
 
-figure; hold on; box on;
+figure
+hold on; box on;
 sxsy = [1,2];
 
 % plot line-of-sight cone

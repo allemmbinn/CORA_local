@@ -11,8 +11,8 @@ function uTransVec = uTRansVec4CASreach()
 %    r - whether all files are valid
 %
 % Other m-files required: none
-% Subfunctions: none
 % MAT-files required: none
+% Subfunctions: none
 %
 % See also: -
 

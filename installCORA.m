@@ -111,8 +111,9 @@ end
 
 function aux_add_corapath()
 % get CORA root directory
-coraroot = fileparts(which(mfilename));
+coraroot = fileparts(which(mfilename))
 addpath(genpath(coraroot));
+savepath
 
 end
 

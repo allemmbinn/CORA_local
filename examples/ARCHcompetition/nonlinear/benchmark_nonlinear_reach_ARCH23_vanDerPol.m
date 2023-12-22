@@ -113,11 +113,11 @@ spec = specification({hs1,hs2},'unsafeSet');
 
 % artificial guard set
 c = [-0.9808 -0.7286 -0.9808 -0.7286 0]; d = -0.9811;
-guard12 = conHyperplane(c,d);
 inv1 = polytope(c,d);
 guard23 = conHyperplane(-c,-d);
 inv2 = polytope(-c,-d);
-inv3 = polytope([1 0 0 0 0],1000);
+inv3 = polytope([1 0 0 0 0],1000);guard12 = conHyperplane(c,d);
+
 
 % identity reset function
 reset.A = eye(5); reset.c = zeros(5,1);
